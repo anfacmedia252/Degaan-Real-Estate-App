@@ -1,0 +1,15 @@
+{
+  "name": "guriraadi-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "web": "npm --workspace apps/web run dev",
+    "api": "npm --workspace apps/api run start:dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3"
+  }
+}
